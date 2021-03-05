@@ -1,0 +1,10 @@
+{
+  "description": "Remove event list and clock/calendar app buttons from the calendar window. This is just an updated version of v2 by breiq",
+  "name": "Minimalist Calendar 3",
+  "shell-version": [
+    "3.38"
+  ],
+  "url": "",
+  "uuid": "miniCal3@mtharpe",
+  "version": 1
+}
