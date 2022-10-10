@@ -1,7 +1,7 @@
 {
   "description": "Remove event list and clock/calendar app buttons from the calendar window. This is just an updated version of v2 by breiq",
   "name": "Minimalist Calendar 3",
-  "shell-version": ["3.36", "3.38", "40", "41", "42", "42.1", "42.2"],
+  "shell-version": ["3.36", "3.38", "40", "41", "42", "42.1", "42.2", "43"],
   "url": "https://github.com/mtharpe/gnome-minCal3-extension",
   "uuid": "miniCal3@mtharpe",
   "version": 3
