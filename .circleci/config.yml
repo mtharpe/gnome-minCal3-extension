@@ -1,0 +1,38 @@
+version: 2.1
+description: Syntax-check JS sources and validate metadata.json
+
+executors:
+  node:
+    docker:
+      - image: cimg/node:20.11
+  alpine:
+    docker:
+      - image: alpine:3.20
+
+jobs:
+  js-syntax:
+    executor: node
+    steps:
+      - checkout
+      - run:
+          name: node --check on every .js file
+          command: |
+            find . -name '*.js' -not -path './.git/*' -print0 \
+              | xargs -0 -r -n1 node --check
+
+  metadata-json:
+    executor: alpine
+    steps:
+      - checkout
+      - run:
+          name: Install jq
+          command: apk add --no-cache jq
+      - run:
+          name: jq parse metadata.json
+          command: jq . metadata.json > /dev/null
+
+workflows:
+  validate:
+    jobs:
+      - js-syntax
+      - metadata-json

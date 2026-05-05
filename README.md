@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/mtharpe/gnome-minCal3-extension/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mtharpe/gnome-minCal3-extension/tree/main)
+
 # gnome-minCal3-extension
 
 ## Description
